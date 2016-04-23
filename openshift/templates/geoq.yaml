@@ -63,9 +63,6 @@ objects:
           kind: ImageStreamTag
           name: python:2.7
           namespace: ${NAMESPACE}
-        env:
-          - name: APP_FILE
-            value: "/opt/app-root/src/geoq/bin/paver start_django"
       type: Source
     triggers:
     - type: ImageChange
