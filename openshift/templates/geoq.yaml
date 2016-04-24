@@ -116,19 +116,19 @@ objects:
           image: geoq
           livenessProbe:
             httpGet:
-              path: /health
+              path: /geoq
               port: 8080
             initialDelaySeconds: 120
-            timeoutSeconds: 10
+            timeoutSeconds: 5
           name: geoq
           ports:
           - containerPort: 8080
           readinessProbe:
             httpGet:
-              path: /health
+              path: /geoq
               port: 8080
             initialDelaySeconds: 120
-            timeoutSeconds: 120
+            timeoutSeconds: 5
           resources:
             limits:
               memory: ${MEMORY_LIMIT}
