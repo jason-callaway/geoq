@@ -25,7 +25,7 @@ paver install_dependencies
 paver sync
 paver install_dev_fixtures
 
-npm install -g less
+#npm install -g less
 
 #cat << EOF > geoq/local_settings.py
 cat << EOF > ~/geoq/local_settings.py
