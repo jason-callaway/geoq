@@ -20,6 +20,7 @@ EOF
 PGPASSWORD=${DATABASE_PASSWORD} psql -h pg-master -U postgres -f ~/queries.sql || true
 
 #export PATH=$PATH:/usr/pgsql-9.4/bin
+pip install django
 pip install paver
 paver install_dependencies
 paver sync
