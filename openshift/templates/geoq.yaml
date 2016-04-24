@@ -82,6 +82,13 @@ objects:
       name: ${NAME}
     strategy:
       type: Rolling
+      rollingParams:
+        post:
+          failurePolicy: "Abort"
+          execNewPod:
+            containerName: "geoq"
+            command:
+              - "/opt/app-root/src/openshift/setup.sh"
     template:
       metadata:
         labels:
@@ -102,6 +109,8 @@ objects:
             value: ${DATABASE_PASSWORD}
           - name: APP_CONFIG
             value: ${APP_CONFIG}
+          - name: APP_FILE
+            value: ${APP_FILE}
           - name: DJANGO_SECRET_KEY
             value: ${DJANGO_SECRET_KEY}
           image: geoq
@@ -215,6 +224,7 @@ parameters:
     are not using the default branch.
   displayName: Git Reference
   name: SOURCE_REPOSITORY_REF
+  value: "develop"
 - description: Set this to the relative path to your project if it is not in the root
     of your repository.
   displayName: Context Directory
@@ -223,6 +233,10 @@ parameters:
     blank a value will be defaulted.
   displayName: Application Hostname
   name: APPLICATION_DOMAIN
+- description: The command to be run by the Python container
+  displayName: Application File
+  name: APP_FILE
+  value: "paver start_django"
 - description: A secret string used to configure the GitHub webhook.
   displayName: GitHub Webhook Secret
   from: '[a-zA-Z0-9]{40}'
