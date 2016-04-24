@@ -236,7 +236,7 @@ parameters:
 - description: The command to be run by the Python container
   displayName: Application File
   name: APP_FILE
-  value: "/opt/app-root/src/openshift/start.sh"
+  value: "/opt/app-root/src/openshift/start.py"
 - description: A secret string used to configure the GitHub webhook.
   displayName: GitHub Webhook Secret
   from: '[a-zA-Z0-9]{40}'
