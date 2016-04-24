@@ -118,7 +118,7 @@ objects:
             httpGet:
               path: /geoq
               port: 8080
-            initialDelaySeconds: 120
+            initialDelaySeconds: 600
             timeoutSeconds: 5
           name: geoq
           ports:
@@ -127,7 +127,7 @@ objects:
             httpGet:
               path: /geoq
               port: 8080
-            initialDelaySeconds: 120
+            initialDelaySeconds: 600
             timeoutSeconds: 5
           resources:
             limits:
