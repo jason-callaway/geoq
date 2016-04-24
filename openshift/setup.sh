@@ -7,7 +7,7 @@ virtualenv geoq_virtualenv
 source geoq_virtualenv/bin/activate
 
 cat > ~/queries.sql << EOF
-create role geoq login password 'geoq';
+create role geoq login password '${DATABASE_PASSWORD}';
 create database geoq with owner geoq;
 \c geoq
 create extension postgis;
