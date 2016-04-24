@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
-#mkdir ~/geoq
-virtualenv ~/geoq
-#pushd ~/geoq
-source ~/geoq/bin/activate
-#git clone https://github.com/ngageoint/geoq.git
-#pushd geoq
+pushd ~
 
-pushd ~/geoq
+virtualenv ~/geoq
+source ~/geoq/bin/activate
 
 cat > ~/queries.sql << EOF
 create role geoq login password 'geoq';
@@ -19,21 +15,18 @@ EOF
 # This sucks, need to make these queries idempotent. For now always return true.
 PGPASSWORD=${DATABASE_PASSWORD} psql -h pg-master -U postgres -f ~/queries.sql || true
 
-#export PATH=$PATH:/usr/pgsql-9.4/bin
+
 pip install django
 pip install paver
 paver install_dependencies
 paver sync
 paver install_dev_fixtures
 
-#npm install -g less
 
-#cat << EOF > geoq/local_settings.py
 cat << EOF > ~/geoq/local_settings.py
 STATIC_URL_FOLDER = '/static'
 STATIC_ROOT = '{0}{1}'.format('/var/www/html', STATIC_URL_FOLDER)
 EOF
 
-#popd
 /usr/bin/env python ~/manage.py collectstatic
 /usr/bin/env python ~/manage.py createsuperuser
