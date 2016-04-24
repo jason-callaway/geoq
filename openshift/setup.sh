@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-mkdir geoq
+#mkdir ~/geoq
 virtualenv ~/geoq
-pushd ~/geoq
-source bin/activate
-git clone https://github.com/ngageoint/geoq.git
-pushd geoq
+#pushd ~/geoq
+source ~/geoq/bin/activate
+#git clone https://github.com/ngageoint/geoq.git
+#pushd geoq
 
 cat >queries.sql << EOF
 create role geoq login password 'geoq';
