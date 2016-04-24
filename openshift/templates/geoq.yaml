@@ -82,13 +82,13 @@ objects:
       name: ${NAME}
     strategy:
       type: Rolling
-      rollingParams:
-        post:
-          failurePolicy: "Abort"
-          execNewPod:
-            containerName: "geoq"
-            command:
-              - "/opt/app-root/src/openshift/setup.sh"
+#      rollingParams:
+#        post:
+#          failurePolicy: "Abort"
+#          execNewPod:
+#            containerName: "geoq"
+#            command:
+#              - "/opt/app-root/src/openshift/setup.sh"
     template:
       metadata:
         labels:
