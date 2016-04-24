@@ -7,6 +7,8 @@ source ~/geoq/bin/activate
 #git clone https://github.com/ngageoint/geoq.git
 #pushd geoq
 
+pushd ~/geoq
+
 cat > ~/queries.sql << EOF
 create role geoq login password 'geoq';
 create database geoq with owner geoq;
