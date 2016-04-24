@@ -61,7 +61,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: python:2.7
+          name: python-27-node-rhel7:latest
           namespace: ${NAMESPACE}
       type: Source
     triggers:
