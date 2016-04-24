@@ -34,5 +34,5 @@ STATIC_ROOT = '{0}{1}'.format('/var/www/html', STATIC_URL_FOLDER)
 EOF
 
 #popd
-python ~/manage.py collectstatic
-python ~/manage.py createsuperuser
+/usr/bin/env python ~/manage.py collectstatic
+/usr/bin/env python ~/manage.py createsuperuser
