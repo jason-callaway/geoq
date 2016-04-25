@@ -1,535 +1,1133 @@
+
+ Documentation
+openshift-dev 
+Projects geoq 
+Add to Project
+Overview
+Browse
+Settings
+Pods  geoq-1-jc1ow
+This pod has been deleted.
+geoq-1-jc1ow  created 32 minutes ago
+deployment
+geoq-1
+deploymentconfig
+geoq
+name
+geoq
+Details
+Logs
+Container: geoq
+Current log from 4/25/16 2:36 PM 
+Status:      Running Open full view of log
+Go to end
+1
 ---> Running application from Python script (/opt/app-root/src/openshift/start.py) ...
+2
 ~ ~
+3
 ~ ~
+4
 New python executable in geoq_virtualenv/bin/python2
+5
 Also creating executable in geoq_virtualenv/bin/python
+6
 Installing Setuptools..............................................................................................................................................................................................................................done.
+7
 Installing Pip.....................................................................................................................................................................................................................................................................................................................................done.
-CREATE ROLE
-CREATE DATABASE
-You are now connected to database "geoq" as user "postgres".
-CREATE EXTENSION
-CREATE EXTENSION
+8
+psql: could not connect to server: Connection refused
+9
+	Is the server running on host "pg-master" (172.17.0.10) and accepting
+10
+	TCP/IP connections on port 5432?
+11
 Downloading/unpacking paver
+12
   Running setup.py egg_info for package paver
+13
 Installing collected packages: paver
+14
   Running setup.py install for paver
+15
     Installing paver script to /opt/app-root/src/geoq_virtualenv/bin
+16
 Successfully installed paver
+17
 Cleaning up...
+18
 ---> pavement.install_dependencies
+19
 pip install --upgrade -r geoq/requirements.txt
+20
 Downloading/unpacking Django==1.5.4 (from -r geoq/requirements.txt (line 1))
+21
   Running setup.py egg_info for package Django
+22
     
+23
     warning: no previously-included files matching '__pycache__' found under directory '*'
+24
     warning: no previously-included files matching '*.py[co]' found under directory '*'
+25
 Downloading/unpacking Django-Select2==4.2.1 (from -r geoq/requirements.txt (line 2))
+26
   Running setup.py egg_info for package Django-Select2
+27
     
+28
     warning: no previously-included files matching '.DS_Store' found under directory 'django_select2/static'
+29
     warning: no previously-included files matching '.DS_Store' found under directory 'django_select2/templatetags'
+30
     warning: no previously-included files matching '*.pyc' found under directory 'django_select2/templatetags'
+31
     warning: no previously-included files found matching 'UK_Advanced_Cryptics_Dictionary_Licensing_Information.txt'
+32
     warning: no previously-included files found matching 'Internal_Notes.md'
+33
 Downloading/unpacking Paver==1.2.1 (from -r geoq/requirements.txt (line 3))
+34
   Running setup.py egg_info for package Paver
+35
 Downloading/unpacking South==0.8.2 (from -r geoq/requirements.txt (line 4))
+36
   Running setup.py egg_info for package South
+37
     
+38
 Downloading/unpacking django-appconf==0.6 (from -r geoq/requirements.txt (line 5))
+39
   Downloading django-appconf-0.6.tar.gz
+40
   Running setup.py egg_info for package django-appconf
+41
     
+42
 Downloading/unpacking django-bootstrap-toolkit==2.15.0 (from -r geoq/requirements.txt (line 7))
+43
   Downloading django-bootstrap-toolkit-2.15.0.tar.gz
+44
   Running setup.py egg_info for package django-bootstrap-toolkit
+45
     
+46
     warning: no previously-included files matching '.DS_Store' found under directory '*'
+47
 Downloading/unpacking django-compressor==1.3 (from -r geoq/requirements.txt (line 8))
+48
   Running setup.py egg_info for package django-compressor
+49
     
+50
     warning: no files found matching '*.js' under directory 'compressor/tests/media'
+51
     warning: no files found matching '*.css' under directory 'compressor/tests/media'
+52
     warning: no files found matching '*.png' under directory 'compressor/tests/media'
+53
     warning: no files found matching '*.coffee' under directory 'compressor/tests/media'
+54
 Downloading/unpacking django-crispy-forms==1.4.0 (from -r geoq/requirements.txt (line 9))
+55
   Running setup.py egg_info for package django-crispy-forms
+56
     
+57
     warning: no files found matching '*' under directory 'crispy_forms/static'
+58
 Downloading/unpacking django-geoexplorer==3.0.4 (from -r geoq/requirements.txt (line 10))
+59
   Running setup.py egg_info for package django-geoexplorer
+60
     
+61
     warning: no files found matching '*.html' under directory 'geoexplorer/templates'
+62
 Downloading/unpacking django-guardian==1.1.1 (from -r geoq/requirements.txt (line 11))
+63
   Running setup.py egg_info for package django-guardian
+64
     
+65
     warning: no files found matching '*.json' under directory 'guardian/fixtures'
+66
     no previously-included directories found matching 'example_project'
+67
     no previously-included directories found matching 'docs/build'
+68
 Downloading/unpacking django-leaflet==0.13.2 (from -r geoq/requirements.txt (line 12))
+69
   Running setup.py egg_info for package django-leaflet
+70
     
+71
 Downloading/unpacking django-reversion==1.7.1 (from -r geoq/requirements.txt (line 13))
+72
   Running setup.py egg_info for package django-reversion
+73
     
+74
 Downloading/unpacking django-singleton==0.1.7 (from -r geoq/requirements.txt (line 14))
+75
   Downloading django-singleton-0.1.7.tar.gz
+76
   Running setup.py egg_info for package django-singleton
+77
     
+78
 Downloading/unpacking django-userena==1.2.4 (from -r geoq/requirements.txt (line 15))
+79
   Running setup.py egg_info for package django-userena
+80
     
+81
     warning: no files found matching 'tests.py'
+82
     warning: no files found matching 'pip-requirements.txt'
+83
     warning: no files found matching '*.py' under directory 'demo_project'
+84
     warning: no files found matching '*.html' under directory 'demo_project/templates'
+85
 Downloading/unpacking easy-thumbnails==1.4 (from -r geoq/requirements.txt (line 16))
+86
   Running setup.py egg_info for package easy-thumbnails
+87
     
+88
     no previously-included directories found matching 'docs/_build'
+89
 Downloading/unpacking jsonfield==0.9.17 (from -r geoq/requirements.txt (line 17))
+90
   Downloading jsonfield-0.9.17.tar.gz
+91
   Running setup.py egg_info for package jsonfield
+92
     
+93
 Downloading/unpacking psycopg2==2.5.1 (from -r geoq/requirements.txt (line 18))
+94
   Running setup.py egg_info for package psycopg2
+95
     
+96
 Downloading/unpacking requests==2.3.0 (from -r geoq/requirements.txt (line 19))
+97
   Running setup.py egg_info for package requests
+98
     
+99
 Downloading/unpacking six==1.4.1 (from -r geoq/requirements.txt (line 20))
+100
   Downloading six-1.4.1.tar.gz
+101
   Running setup.py egg_info for package six
+102
     
+103
 Downloading/unpacking geojson==1.0.7 (from -r geoq/requirements.txt (line 21))
+104
   Downloading geojson-1.0.7.tar.gz
+105
   Running setup.py egg_info for package geojson
+106
     
+107
     warning: no files found matching '*.txt' under directory 'tests'
+108
 Downloading/unpacking pytz==2014.4 (from -r geoq/requirements.txt (line 22))
+109
   Running setup.py egg_info for package pytz
+110
     
+111
 Downloading/unpacking webcolors==1.4 (from -r geoq/requirements.txt (line 23))
+112
   Downloading webcolors-1.4.tar.gz
+113
   Running setup.py egg_info for package webcolors
+114
     
+115
 Downloading/unpacking django-extensions==1.3.11 (from -r geoq/requirements.txt (line 24))
+116
   Running setup.py egg_info for package django-extensions
+117
     
+118
 Downloading/unpacking django-http-proxy==0.3.2 (from -r geoq/requirements.txt (line 25))
+119
   Downloading django-http-proxy-0.3.2.tar.gz
+120
   Running setup.py egg_info for package django-http-proxy
+121
     
+122
 Downloading/unpacking statsd==3.0.1 (from -r geoq/requirements.txt (line 26))
+123
   Running setup.py egg_info for package statsd
+124
     
+125
 Downloading/unpacking django-debug-toolbar==1.2.2 (from -r geoq/requirements.txt (line 27))
+126
   Running setup.py egg_info for package django-debug-toolbar
+127
     
+128
 Downloading/unpacking Pillow==2.9.0 (from -r geoq/requirements.txt (line 28))
+129
   Running setup.py egg_info for package Pillow
+130
     
+131
 Downloading/unpacking django-denorm==0.2.0 (from -r geoq/requirements.txt (line 29))
+132
   Downloading django-denorm-0.2.0.tar.gz
+133
   Running setup.py egg_info for package django-denorm
+134
     
+135
 Downloading/unpacking html2text (from django-userena==1.2.4->-r geoq/requirements.txt (line 15))
+136
   Running setup.py egg_info for package html2text
+137
     
-Downloading/unpacking setuptools from https://pypi.python.org/packages/00/d7/5511e82e0645ed4b939bb42f0a07450d0cdf9cf3ed08758b459f3d002747/setuptools-20.9.0.tar.gz#md5=e5f4d80fcb68bcac179b327bf1791dec (from geojson==1.0.7->-r geoq/requirements.txt (line 21))
+138
+Downloading/unpacking setuptools from https://pypi.python.org/packages/86/ee/622e83b0dbede6d48891ed209fa5ca83fcc485f9b6696cf56796eda40806/setuptools-20.10.1.zip#md5=5e236ca1a0faca5b609eb57b0dcb4184 (from geojson==1.0.7->-r geoq/requirements.txt (line 21))
+139
   Running setup.py egg_info for package setuptools
+140
     
+141
     warning: no files found matching '*' under directory 'setuptools/_vendor'
+142
     warning: no files found matching '*.txt'
+143
 Downloading/unpacking sqlparse (from django-debug-toolbar==1.2.2->-r geoq/requirements.txt (line 27))
+144
   Running setup.py egg_info for package sqlparse
+145
     
+146
 Installing collected packages: Django, Django-Select2, Paver, South, django-appconf, django-bootstrap-toolkit, django-compressor, django-crispy-forms, django-geoexplorer, django-guardian, django-leaflet, django-reversion, django-singleton, django-userena, easy-thumbnails, jsonfield, psycopg2, requests, six, geojson, pytz, webcolors, django-extensions, django-http-proxy, statsd, django-debug-toolbar, Pillow, django-denorm, html2text, setuptools, sqlparse
+147
   Running setup.py install for Django
+148
     changing mode of build/scripts-2.7/django-admin.py from 644 to 755
+149
     
+150
     warning: no previously-included files matching '__pycache__' found under directory '*'
+151
     warning: no previously-included files matching '*.py[co]' found under directory '*'
+152
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/django-admin.py to 755
+153
   Running setup.py install for Django-Select2
+154
     
+155
     warning: no previously-included files matching '.DS_Store' found under directory 'django_select2/static'
+156
     warning: no previously-included files matching '.DS_Store' found under directory 'django_select2/templatetags'
+157
     warning: no previously-included files matching '*.pyc' found under directory 'django_select2/templatetags'
+158
     warning: no previously-included files found matching 'UK_Advanced_Cryptics_Dictionary_Licensing_Information.txt'
+159
     warning: no previously-included files found matching 'Internal_Notes.md'
+160
   Found existing installation: Paver 1.2.4
+161
     Uninstalling Paver:
+162
       Successfully uninstalled Paver
+163
   Running setup.py install for Paver
+164
     Installing paver script to /opt/app-root/src/geoq_virtualenv/bin
+165
   Running setup.py install for South
+166
     
+167
   Running setup.py install for django-appconf
+168
     
+169
   Running setup.py install for django-bootstrap-toolkit
+170
     
+171
     warning: no previously-included files matching '.DS_Store' found under directory '*'
+172
   Running setup.py install for django-compressor
+173
     
+174
     warning: no files found matching '*.js' under directory 'compressor/tests/media'
+175
     warning: no files found matching '*.css' under directory 'compressor/tests/media'
+176
     warning: no files found matching '*.png' under directory 'compressor/tests/media'
+177
     warning: no files found matching '*.coffee' under directory 'compressor/tests/media'
+178
   Running setup.py install for django-crispy-forms
+179
     
+180
     warning: no files found matching '*' under directory 'crispy_forms/static'
+181
   Running setup.py install for django-geoexplorer
+182
     
+183
     warning: no files found matching '*.html' under directory 'geoexplorer/templates'
+184
   Running setup.py install for django-guardian
+185
     
+186
     warning: no files found matching '*.json' under directory 'guardian/fixtures'
+187
     no previously-included directories found matching 'example_project'
+188
     no previously-included directories found matching 'docs/build'
+189
   Running setup.py install for django-leaflet
+190
     
+191
   Running setup.py install for django-reversion
+192
     
+193
   Running setup.py install for django-singleton
+194
     
+195
   Running setup.py install for django-userena
+196
     
+197
     warning: no files found matching 'tests.py'
+198
     warning: no files found matching 'pip-requirements.txt'
+199
     warning: no files found matching '*.py' under directory 'demo_project'
+200
     warning: no files found matching '*.html' under directory 'demo_project/templates'
+201
   Running setup.py install for easy-thumbnails
+202
     
+203
     no previously-included directories found matching 'docs/_build'
+204
   Running setup.py install for jsonfield
+205
     
+206
   Running setup.py install for psycopg2
+207
     building 'psycopg2._psycopg' extension
+208
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/psycopgmodule.c -o build/temp.linux-x86_64-2.7/psycopg/psycopgmodule.o -Wdeclaration-after-statement
+209
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/green.c -o build/temp.linux-x86_64-2.7/psycopg/green.o -Wdeclaration-after-statement
+210
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/pqpath.c -o build/temp.linux-x86_64-2.7/psycopg/pqpath.o -Wdeclaration-after-statement
+211
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/utils.c -o build/temp.linux-x86_64-2.7/psycopg/utils.o -Wdeclaration-after-statement
+212
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/bytes_format.c -o build/temp.linux-x86_64-2.7/psycopg/bytes_format.o -Wdeclaration-after-statement
+213
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/connection_int.c -o build/temp.linux-x86_64-2.7/psycopg/connection_int.o -Wdeclaration-after-statement
+214
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/connection_type.c -o build/temp.linux-x86_64-2.7/psycopg/connection_type.o -Wdeclaration-after-statement
+215
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/cursor_int.c -o build/temp.linux-x86_64-2.7/psycopg/cursor_int.o -Wdeclaration-after-statement
+216
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/cursor_type.c -o build/temp.linux-x86_64-2.7/psycopg/cursor_type.o -Wdeclaration-after-statement
+217
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/diagnostics_type.c -o build/temp.linux-x86_64-2.7/psycopg/diagnostics_type.o -Wdeclaration-after-statement
+218
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/error_type.c -o build/temp.linux-x86_64-2.7/psycopg/error_type.o -Wdeclaration-after-statement
+219
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/lobject_int.c -o build/temp.linux-x86_64-2.7/psycopg/lobject_int.o -Wdeclaration-after-statement
+220
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/lobject_type.c -o build/temp.linux-x86_64-2.7/psycopg/lobject_type.o -Wdeclaration-after-statement
+221
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/notify_type.c -o build/temp.linux-x86_64-2.7/psycopg/notify_type.o -Wdeclaration-after-statement
+222
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/xid_type.c -o build/temp.linux-x86_64-2.7/psycopg/xid_type.o -Wdeclaration-after-statement
+223
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_asis.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_asis.o -Wdeclaration-after-statement
+224
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_binary.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_binary.o -Wdeclaration-after-statement
+225
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_datetime.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_datetime.o -Wdeclaration-after-statement
+226
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_list.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_list.o -Wdeclaration-after-statement
+227
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_pboolean.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_pboolean.o -Wdeclaration-after-statement
+228
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_pdecimal.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_pdecimal.o -Wdeclaration-after-statement
+229
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_pint.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_pint.o -Wdeclaration-after-statement
+230
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_pfloat.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_pfloat.o -Wdeclaration-after-statement
+231
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/adapter_qstring.c -o build/temp.linux-x86_64-2.7/psycopg/adapter_qstring.o -Wdeclaration-after-statement
+232
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/microprotocols.c -o build/temp.linux-x86_64-2.7/psycopg/microprotocols.o -Wdeclaration-after-statement
+233
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/microprotocols_proto.c -o build/temp.linux-x86_64-2.7/psycopg/microprotocols_proto.o -Wdeclaration-after-statement
+234
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 -DPSYCOPG_VERSION="2.5.1 (dt dec pq3 ext)" -DPG_VERSION_HEX=0x09020F -DPSYCOPG_EXTENSIONS=1 -DPSYCOPG_NEW_BOOLEAN=1 -DHAVE_PQFREEMEM=1 -I/opt/rh/python27/root/usr/include/python2.7 -I. -I/usr/include -I/usr/include/pgsql/server -c psycopg/typecast.c -o build/temp.linux-x86_64-2.7/psycopg/typecast.o -Wdeclaration-after-statement
+235
     gcc -pthread -shared -Wl,-z,relro build/temp.linux-x86_64-2.7/psycopg/psycopgmodule.o build/temp.linux-x86_64-2.7/psycopg/green.o build/temp.linux-x86_64-2.7/psycopg/pqpath.o build/temp.linux-x86_64-2.7/psycopg/utils.o build/temp.linux-x86_64-2.7/psycopg/bytes_format.o build/temp.linux-x86_64-2.7/psycopg/connection_int.o build/temp.linux-x86_64-2.7/psycopg/connection_type.o build/temp.linux-x86_64-2.7/psycopg/cursor_int.o build/temp.linux-x86_64-2.7/psycopg/cursor_type.o build/temp.linux-x86_64-2.7/psycopg/diagnostics_type.o build/temp.linux-x86_64-2.7/psycopg/error_type.o build/temp.linux-x86_64-2.7/psycopg/lobject_int.o build/temp.linux-x86_64-2.7/psycopg/lobject_type.o build/temp.linux-x86_64-2.7/psycopg/notify_type.o build/temp.linux-x86_64-2.7/psycopg/xid_type.o build/temp.linux-x86_64-2.7/psycopg/adapter_asis.o build/temp.linux-x86_64-2.7/psycopg/adapter_binary.o build/temp.linux-x86_64-2.7/psycopg/adapter_datetime.o build/temp.linux-x86_64-2.7/psycopg/adapter_list.o build/temp.linux-x86_64-2.7/psycopg/adapter_pboolean.o build/temp.linux-x86_64-2.7/psycopg/adapter_pdecimal.o build/temp.linux-x86_64-2.7/psycopg/adapter_pint.o build/temp.linux-x86_64-2.7/psycopg/adapter_pfloat.o build/temp.linux-x86_64-2.7/psycopg/adapter_qstring.o build/temp.linux-x86_64-2.7/psycopg/microprotocols.o build/temp.linux-x86_64-2.7/psycopg/microprotocols_proto.o build/temp.linux-x86_64-2.7/psycopg/typecast.o -L/opt/rh/python27/root/usr/lib64 -L/usr/lib64 -lpython2.7 -lpq -o build/lib.linux-x86_64-2.7/psycopg2/_psycopg.so
+236
     
+237
   Running setup.py install for requests
+238
     
+239
   Running setup.py install for six
+240
     
+241
   Running setup.py install for geojson
+242
     
+243
     warning: no files found matching '*.txt' under directory 'tests'
+244
   Running setup.py install for pytz
+245
     
+246
   Running setup.py install for webcolors
+247
     
+248
   Running setup.py install for django-extensions
+249
     
+250
   Running setup.py install for django-http-proxy
+251
     
+252
   Running setup.py install for statsd
+253
     
+254
   Running setup.py install for django-debug-toolbar
+255
     
+256
   Running setup.py install for Pillow
+257
     
+258
     building 'PIL._imaging' extension
+259
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c _imaging.c -o build/temp.linux-x86_64-2.7/_imaging.o
+260
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Resample.c -o build/temp.linux-x86_64-2.7/libImaging/Resample.o
+261
     libImaging/Resample.c:87:45: warning: always_inline function might not be inlinable [-Wattributes]
+262
      static float __attribute__((always_inline)) i2f(int v) {
+263
                                                  ^
+264
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Bands.c -o build/temp.linux-x86_64-2.7/libImaging/Bands.o
+265
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/BitDecode.c -o build/temp.linux-x86_64-2.7/libImaging/BitDecode.o
+266
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Blend.c -o build/temp.linux-x86_64-2.7/libImaging/Blend.o
+267
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Chops.c -o build/temp.linux-x86_64-2.7/libImaging/Chops.o
+268
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Convert.c -o build/temp.linux-x86_64-2.7/libImaging/Convert.o
+269
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c decode.c -o build/temp.linux-x86_64-2.7/decode.o
+270
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c encode.c -o build/temp.linux-x86_64-2.7/encode.o
+271
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ConvertYCbCr.c -o build/temp.linux-x86_64-2.7/libImaging/ConvertYCbCr.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c map.c -o build/temp.linux-x86_64-2.7/map.o
+272
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Copy.c -o build/temp.linux-x86_64-2.7/libImaging/Copy.o
+273
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c map.c -o build/temp.linux-x86_64-2.7/map.o
+274
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Crc32.c -o build/temp.linux-x86_64-2.7/libImaging/Crc32.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c display.c -o build/temp.linux-x86_64-2.7/display.o
+275
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Crop.c -o build/temp.linux-x86_64-2.7/libImaging/Crop.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c outline.c -o build/temp.linux-x86_64-2.7/outline.o
+276
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c display.c -o build/temp.linux-x86_64-2.7/display.o
+277
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Dib.c -o build/temp.linux-x86_64-2.7/libImaging/Dib.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c path.c -o build/temp.linux-x86_64-2.7/path.o
+278
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c outline.c -o build/temp.linux-x86_64-2.7/outline.o
+279
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Draw.c -o build/temp.linux-x86_64-2.7/libImaging/Draw.o
+280
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c path.c -o build/temp.linux-x86_64-2.7/path.o
+281
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Access.c -o build/temp.linux-x86_64-2.7/libImaging/Access.o
+282
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/AlphaComposite.c -o build/temp.linux-x86_64-2.7/libImaging/AlphaComposite.o
+283
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Geometry.c -o build/temp.linux-x86_64-2.7/libImaging/Geometry.o
+284
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Effects.c -o build/temp.linux-x86_64-2.7/libImaging/Effects.o
+285
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/EpsEncode.c -o build/temp.linux-x86_64-2.7/libImaging/EpsEncode.o
+286
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/File.c -o build/temp.linux-x86_64-2.7/libImaging/File.o
+287
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Fill.c -o build/temp.linux-x86_64-2.7/libImaging/Fill.o
+288
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Filter.c -o build/temp.linux-x86_64-2.7/libImaging/Filter.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GetBBox.c -o build/temp.linux-x86_64-2.7/libImaging/GetBBox.o
+289
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/FliDecode.c -o build/temp.linux-x86_64-2.7/libImaging/FliDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GifDecode.c -o build/temp.linux-x86_64-2.7/libImaging/GifDecode.o
+290
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GetBBox.c -o build/temp.linux-x86_64-2.7/libImaging/GetBBox.o
+291
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Matrix.c -o build/temp.linux-x86_64-2.7/libImaging/Matrix.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GifEncode.c -o build/temp.linux-x86_64-2.7/libImaging/GifEncode.o
+292
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ModeFilter.c -o build/temp.linux-x86_64-2.7/libImaging/ModeFilter.o
+293
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GifDecode.c -o build/temp.linux-x86_64-2.7/libImaging/GifDecode.o
+294
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/MspDecode.c -o build/temp.linux-x86_64-2.7/libImaging/MspDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/HexDecode.c -o build/temp.linux-x86_64-2.7/libImaging/HexDecode.o
+295
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/GifEncode.c -o build/temp.linux-x86_64-2.7/libImaging/GifEncode.o
+296
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Negative.c -o build/temp.linux-x86_64-2.7/libImaging/Negative.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Histo.c -o build/temp.linux-x86_64-2.7/libImaging/Histo.o
+297
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Offset.c -o build/temp.linux-x86_64-2.7/libImaging/Offset.o
+298
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Pack.c -o build/temp.linux-x86_64-2.7/libImaging/Pack.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/JpegDecode.c -o build/temp.linux-x86_64-2.7/libImaging/JpegDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/JpegEncode.c -o build/temp.linux-x86_64-2.7/libImaging/JpegEncode.o
+299
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/HexDecode.c -o build/temp.linux-x86_64-2.7/libImaging/HexDecode.o
+300
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Histo.c -o build/temp.linux-x86_64-2.7/libImaging/Histo.o
+301
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PackDecode.c -o build/temp.linux-x86_64-2.7/libImaging/PackDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/LzwDecode.c -o build/temp.linux-x86_64-2.7/libImaging/LzwDecode.o
+302
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/JpegDecode.c -o build/temp.linux-x86_64-2.7/libImaging/JpegDecode.o
+303
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Palette.c -o build/temp.linux-x86_64-2.7/libImaging/Palette.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Quant.c -o build/temp.linux-x86_64-2.7/libImaging/Quant.o
+304
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/JpegEncode.c -o build/temp.linux-x86_64-2.7/libImaging/JpegEncode.o
+305
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/LzwDecode.c -o build/temp.linux-x86_64-2.7/libImaging/LzwDecode.o
+306
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Paste.c -o build/temp.linux-x86_64-2.7/libImaging/Paste.o
+307
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Quant.c -o build/temp.linux-x86_64-2.7/libImaging/Quant.o
+308
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/RawDecode.c -o build/temp.linux-x86_64-2.7/libImaging/RawDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantOctree.c -o build/temp.linux-x86_64-2.7/libImaging/QuantOctree.o
+309
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/RawEncode.c -o build/temp.linux-x86_64-2.7/libImaging/RawEncode.o
+310
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Storage.c -o build/temp.linux-x86_64-2.7/libImaging/Storage.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantHash.c -o build/temp.linux-x86_64-2.7/libImaging/QuantHash.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantHeap.c -o build/temp.linux-x86_64-2.7/libImaging/QuantHeap.o
+311
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantOctree.c -o build/temp.linux-x86_64-2.7/libImaging/QuantOctree.o
+312
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/SunRleDecode.c -o build/temp.linux-x86_64-2.7/libImaging/SunRleDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PcdDecode.c -o build/temp.linux-x86_64-2.7/libImaging/PcdDecode.o
+313
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/TgaRleDecode.c -o build/temp.linux-x86_64-2.7/libImaging/TgaRleDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PcxDecode.c -o build/temp.linux-x86_64-2.7/libImaging/PcxDecode.o
+314
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantHash.c -o build/temp.linux-x86_64-2.7/libImaging/QuantHash.o
+315
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Unpack.c -o build/temp.linux-x86_64-2.7/libImaging/Unpack.o
+316
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/QuantHeap.c -o build/temp.linux-x86_64-2.7/libImaging/QuantHeap.o
+317
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PcdDecode.c -o build/temp.linux-x86_64-2.7/libImaging/PcdDecode.o
+318
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PcxDecode.c -o build/temp.linux-x86_64-2.7/libImaging/PcxDecode.o
+319
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/PcxEncode.c -o build/temp.linux-x86_64-2.7/libImaging/PcxEncode.o
+320
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Point.c -o build/temp.linux-x86_64-2.7/libImaging/Point.o
+321
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/RankFilter.c -o build/temp.linux-x86_64-2.7/libImaging/RankFilter.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/XbmEncode.c -o build/temp.linux-x86_64-2.7/libImaging/XbmEncode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ZipDecode.c -o build/temp.linux-x86_64-2.7/libImaging/ZipDecode.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ZipEncode.c -o build/temp.linux-x86_64-2.7/libImaging/ZipEncode.o
+322
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/UnpackYCC.c -o build/temp.linux-x86_64-2.7/libImaging/UnpackYCC.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/TiffDecode.c -o build/temp.linux-x86_64-2.7/libImaging/TiffDecode.o
+323
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/XbmEncode.c -o build/temp.linux-x86_64-2.7/libImaging/XbmEncode.o
+324
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/UnsharpMask.c -o build/temp.linux-x86_64-2.7/libImaging/UnsharpMask.o
-    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Incremental.c -o build/temp.linux-x86_64-2.7/libImaging/Incremental.o
+325
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ZipDecode.c -o build/temp.linux-x86_64-2.7/libImaging/ZipDecode.o
+326
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/XbmDecode.c -o build/temp.linux-x86_64-2.7/libImaging/XbmDecode.o
+327
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/ZipEncode.c -o build/temp.linux-x86_64-2.7/libImaging/ZipEncode.o
+328
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/TiffDecode.c -o build/temp.linux-x86_64-2.7/libImaging/TiffDecode.o
+329
+    gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Incremental.c -o build/temp.linux-x86_64-2.7/libImaging/Incremental.o
+330
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Jpeg2KDecode.c -o build/temp.linux-x86_64-2.7/libImaging/Jpeg2KDecode.o
+331
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/Jpeg2KEncode.c -o build/temp.linux-x86_64-2.7/libImaging/Jpeg2KEncode.o
+332
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DHAVE_LIBJPEG -DHAVE_LIBZ -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c libImaging/BoxBlur.c -o build/temp.linux-x86_64-2.7/libImaging/BoxBlur.o
+333
     Building using 2 processes
+334
     gcc -pthread -shared -Wl,-z,relro build/temp.linux-x86_64-2.7/_imaging.o build/temp.linux-x86_64-2.7/decode.o build/temp.linux-x86_64-2.7/encode.o build/temp.linux-x86_64-2.7/map.o build/temp.linux-x86_64-2.7/display.o build/temp.linux-x86_64-2.7/outline.o build/temp.linux-x86_64-2.7/path.o build/temp.linux-x86_64-2.7/libImaging/Access.o build/temp.linux-x86_64-2.7/libImaging/AlphaComposite.o build/temp.linux-x86_64-2.7/libImaging/Resample.o build/temp.linux-x86_64-2.7/libImaging/Bands.o build/temp.linux-x86_64-2.7/libImaging/BitDecode.o build/temp.linux-x86_64-2.7/libImaging/Blend.o build/temp.linux-x86_64-2.7/libImaging/Chops.o build/temp.linux-x86_64-2.7/libImaging/Convert.o build/temp.linux-x86_64-2.7/libImaging/ConvertYCbCr.o build/temp.linux-x86_64-2.7/libImaging/Copy.o build/temp.linux-x86_64-2.7/libImaging/Crc32.o build/temp.linux-x86_64-2.7/libImaging/Crop.o build/temp.linux-x86_64-2.7/libImaging/Dib.o build/temp.linux-x86_64-2.7/libImaging/Draw.o build/temp.linux-x86_64-2.7/libImaging/Effects.o build/temp.linux-x86_64-2.7/libImaging/EpsEncode.o build/temp.linux-x86_64-2.7/libImaging/File.o build/temp.linux-x86_64-2.7/libImaging/Fill.o build/temp.linux-x86_64-2.7/libImaging/Filter.o build/temp.linux-x86_64-2.7/libImaging/FliDecode.o build/temp.linux-x86_64-2.7/libImaging/Geometry.o build/temp.linux-x86_64-2.7/libImaging/GetBBox.o build/temp.linux-x86_64-2.7/libImaging/GifDecode.o build/temp.linux-x86_64-2.7/libImaging/GifEncode.o build/temp.linux-x86_64-2.7/libImaging/HexDecode.o build/temp.linux-x86_64-2.7/libImaging/Histo.o build/temp.linux-x86_64-2.7/libImaging/JpegDecode.o build/temp.linux-x86_64-2.7/libImaging/JpegEncode.o build/temp.linux-x86_64-2.7/libImaging/LzwDecode.o build/temp.linux-x86_64-2.7/libImaging/Matrix.o build/temp.linux-x86_64-2.7/libImaging/ModeFilter.o build/temp.linux-x86_64-2.7/libImaging/MspDecode.o build/temp.linux-x86_64-2.7/libImaging/Negative.o build/temp.linux-x86_64-2.7/libImaging/Offset.o build/temp.linux-x86_64-2.7/libImaging/Pack.o build/temp.linux-x86_64-2.7/libIm
+335
 aging/PackDecode.o build/temp.linux-x86_64-2.7/libImaging/Palette.o build/temp.linux-x86_64-2.7/libImaging/Paste.o build/temp.linux-x86_64-2.7/libImaging/Quant.o build/temp.linux-x86_64-2.7/libImaging/QuantOctree.o build/temp.linux-x86_64-2.7/libImaging/QuantHash.o build/temp.linux-x86_64-2.7/libImaging/QuantHeap.o build/temp.linux-x86_64-2.7/libImaging/PcdDecode.o build/temp.linux-x86_64-2.7/libImaging/PcxDecode.o build/temp.linux-x86_64-2.7/libImaging/PcxEncode.o build/temp.linux-x86_64-2.7/libImaging/Point.o build/temp.linux-x86_64-2.7/libImaging/RankFilter.o build/temp.linux-x86_64-2.7/libImaging/RawDecode.o build/temp.linux-x86_64-2.7/libImaging/RawEncode.o build/temp.linux-x86_64-2.7/libImaging/Storage.o build/temp.linux-x86_64-2.7/libImaging/SunRleDecode.o build/temp.linux-x86_64-2.7/libImaging/TgaRleDecode.o build/temp.linux-x86_64-2.7/libImaging/Unpack.o build/temp.linux-x86_64-2.7/libImaging/UnpackYCC.o build/temp.linux-x86_64-2.7/libImaging/UnsharpMask.o build/temp.linux-x86_64-2.7/libImaging/XbmDecode.o build/temp.linux-x86_64-2.7/libImaging/XbmEncode.o build/temp.linux-x86_64-2.7/libImaging/ZipDecode.o build/temp.linux-x86_64-2.7/libImaging/ZipEncode.o build/temp.linux-x86_64-2.7/libImaging/TiffDecode.o build/temp.linux-x86_64-2.7/libImaging/Incremental.o build/temp.linux-x86_64-2.7/libImaging/Jpeg2KDecode.o build/temp.linux-x86_64-2.7/libImaging/Jpeg2KEncode.o build/temp.linux-x86_64-2.7/libImaging/BoxBlur.o -L/opt/app-root/src/geoq_virtualenv/lib -L/usr/lib64 -L/usr/local/lib -L/usr/lib -L/opt/rh/python27/root/usr/lib64 -ljpeg -lz -lpython2.7 -o build/lib.linux-x86_64-2.7/PIL/_imaging.so
+336
     building 'PIL._imagingft' extension
+337
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c _imagingft.c -o build/temp.linux-x86_64-2.7/_imagingft.o
+338
     Building using 2 processes
+339
     gcc -pthread -shared -Wl,-z,relro build/temp.linux-x86_64-2.7/_imagingft.o -L/opt/app-root/src/geoq_virtualenv/lib -L/usr/lib64 -L/usr/local/lib -L/usr/lib -L/opt/rh/python27/root/usr/lib64 -lfreetype -lpython2.7 -o build/lib.linux-x86_64-2.7/PIL/_imagingft.so
+340
     building 'PIL._imagingmath' extension
+341
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c _imagingmath.c -o build/temp.linux-x86_64-2.7/_imagingmath.o
+342
     Building using 2 processes
+343
     gcc -pthread -shared -Wl,-z,relro build/temp.linux-x86_64-2.7/_imagingmath.o -L/opt/app-root/src/geoq_virtualenv/lib -L/usr/lib64 -L/usr/local/lib -L/usr/lib -L/opt/rh/python27/root/usr/lib64 -lpython2.7 -o build/lib.linux-x86_64-2.7/PIL/_imagingmath.so
+344
     building 'PIL._imagingmorph' extension
+345
     gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/freetype2 -I/opt/app-root/src/geoq_virtualenv/build/Pillow/libImaging -I/opt/app-root/src/geoq_virtualenv/include -I/usr/local/include -I/usr/include -I/opt/rh/python27/root/usr/include/python2.7 -c _imagingmorph.c -o build/temp.linux-x86_64-2.7/_imagingmorph.o
+346
     Building using 2 processes
+347
     gcc -pthread -shared -Wl,-z,relro build/temp.linux-x86_64-2.7/_imagingmorph.o -L/opt/app-root/src/geoq_virtualenv/lib -L/usr/lib64 -L/usr/local/lib -L/usr/lib -L/opt/rh/python27/root/usr/lib64 -lpython2.7 -o build/lib.linux-x86_64-2.7/PIL/_imagingmorph.so
+348
     --------------------------------------------------------------------
+349
     PIL SETUP SUMMARY
+350
     --------------------------------------------------------------------
+351
     version      Pillow 2.9.0
+352
     platform     linux2 2.7.8 (default, May 19 2015, 02:45:21)
+353
                  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+354
     --------------------------------------------------------------------
+355
     *** TKINTER support not available
+356
     --- JPEG support available
+357
     *** OPENJPEG (JPEG2000) support not available
+358
     --- ZLIB (PNG/ZIP) support available
+359
     *** LIBTIFF support not available
+360
     --- FREETYPE2 support available
+361
     *** LITTLECMS2 support not available
+362
     *** WEBP support not available
+363
     *** WEBPMUX support not available
+364
     --------------------------------------------------------------------
+365
     To add a missing option, make sure you have the required
+366
     library, and set the corresponding ROOT variable in the
+367
     setup.py script.
+368
     
+369
     To check the build, run the selftest.py script.
+370
     
+371
     changing mode of build/scripts-2.7/pilconvert.py from 644 to 755
+372
     changing mode of build/scripts-2.7/pildriver.py from 644 to 755
+373
     changing mode of build/scripts-2.7/pilfile.py from 644 to 755
+374
     changing mode of build/scripts-2.7/pilfont.py from 644 to 755
+375
     changing mode of build/scripts-2.7/pilprint.py from 644 to 755
+376
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/pilconvert.py to 755
+377
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/pildriver.py to 755
+378
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/pilfile.py to 755
+379
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/pilfont.py to 755
+380
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/pilprint.py to 755
+381
   Running setup.py install for django-denorm
+382
     
+383
   Running setup.py install for html2text
+384
     
+385
     Installing html2text script to /opt/app-root/src/geoq_virtualenv/bin
+386
   Found existing installation: setuptools 0.9.8
+387
     Uninstalling setuptools:
+388
       Successfully uninstalled setuptools
+389
   Running setup.py install for setuptools
+390
     
+391
     warning: no files found matching '*' under directory 'setuptools/_vendor'
+392
     warning: no files found matching '*.txt'
+393
     Installing easy_install script to /opt/app-root/src/geoq_virtualenv/bin
+394
     Installing easy_install-2.7 script to /opt/app-root/src/geoq_virtualenv/bin
-  Could not find .egg-info directory in install record for setuptools from https://pypi.python.org/packages/00/d7/5511e82e0645ed4b939bb42f0a07450d0cdf9cf3ed08758b459f3d002747/setuptools-20.9.0.tar.gz#md5=e5f4d80fcb68bcac179b327bf1791dec in ./geoq_virtualenv/lib/python2.7/site-packages (from geojson==1.0.7->-r geoq/requirements.txt (line 21))
+395
+  Could not find .egg-info directory in install record for setuptools from https://pypi.python.org/packages/86/ee/622e83b0dbede6d48891ed209fa5ca83fcc485f9b6696cf56796eda40806/setuptools-20.10.1.zip#md5=5e236ca1a0faca5b609eb57b0dcb4184 in ./geoq_virtualenv/lib/python2.7/site-packages (from geojson==1.0.7->-r geoq/requirements.txt (line 21))
+396
   Running setup.py install for sqlparse
+397
     changing mode of build/scripts-2.7/sqlformat from 644 to 755
+398
     
+399
     changing mode of /opt/app-root/src/geoq_virtualenv/bin/sqlformat to 755
+400
   Could not find .egg-info directory in install record for sqlparse (from django-debug-toolbar==1.2.2->-r geoq/requirements.txt (line 27))
+401
 Successfully installed Django Django-Select2 Paver South django-appconf django-bootstrap-toolkit django-compressor django-crispy-forms django-geoexplorer django-guardian django-leaflet django-reversion django-singleton django-userena easy-thumbnails jsonfield psycopg2 requests six geojson pytz webcolors django-extensions django-http-proxy statsd django-debug-toolbar Pillow django-denorm html2text setuptools sqlparse
+402
 Cleaning up...
+403
 ---> pavement.sync
+404
 python manage.py syncdb --noinput
+405
 Traceback (most recent call last):
+406
   File "manage.py", line 14, in <module>
+407
     execute_from_command_line(sys.argv)
+408
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 453, in execute_from_command_line
+409
     utility.execute()
+410
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 392, in execute
+411
     self.fetch_command(subcommand).run_from_argv(self.argv)
+412
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 272, in fetch_command
+413
     klass = load_command_class(app_name, subcommand)
+414
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 77, in load_command_class
+415
     module = import_module('%s.management.commands.%s' % (app_name, name))
+416
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+417
     __import__(name)
+418
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/south/management/commands/__init__.py", line 10, in <module>
+419
     import django.template.loaders.app_directories
+420
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/template/loaders/app_directories.py", line 23, in <module>
+421
     mod = import_module(app)
+422
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+423
     __import__(name)
+424
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 3, in <module>
+425
     from django.contrib.admin.helpers import ACTION_CHECKBOX_NAME
+426
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/admin/helpers.py", line 4, in <module>
+427
     from django.contrib.admin.util import (flatten_fieldsets, lookup_field,
+428
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/admin/util.py", line 6, in <module>
+429
     from django.db import models
+430
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 40, in <module>
+431
     backend = load_backend(connection.settings_dict['ENGINE'])
+432
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 34, in __getattr__
+433
     return getattr(connections[DEFAULT_DB_ALIAS], item)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 93, in __getitem__
-    backend = load_backend(db['ENGINE'])
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 27, in load_backend
-    return import_module('.base', backend_name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
-    __import__(name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 5, in <module>
-    from django.contrib.gis.db.backends.postgis.operations import PostGISOperations
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 8, in <module>
-    from django.contrib.gis.geometry.backend import Geometry
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/geometry/backend/__init__.py", line 14, in <module>
-    '"%s".' % geom_backend)
-django.core.exceptions.ImproperlyConfigured: Could not import user-defined GEOMETRY_BACKEND "geos".
+434
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __getitem__
+435
+    conn = backend.DatabaseWrapper(db, alias)
+436
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 11, in __init__
+437
+    self.ops = PostGISOperations(self)
+438
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 92, in __init__
+439
+    vtup = self.postgis_version_tuple()
+440
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 444, in postgis_version_tuple
+441
+    version = self.postgis_lib_version()
+442
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 424, in postgis_lib_version
+443
+    return self._get_postgis_func('postgis_lib_version')
+444
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 405, in _get_postgis_func
+445
+    cursor = self.connection._cursor()
+446
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 182, in _cursor
+447
+    self.connection = Database.connect(**conn_params)
+448
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+449
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+450
+psycopg2.OperationalError: FATAL:  password authentication failed for user "geoq"
+451
+
+452
+
+453
+
+454
 Captured Task Output:
+455
 ---------------------
+456
+
+457
 ---> pavement.sync
+458
 python manage.py syncdb --noinput
+459
+
+460
 Build failed running pavement.sync: Subprocess return code: 1
+461
 ---> pavement.install_dev_fixtures
+462
 python manage.py loaddata geoq/fixtures/initial_data.json
+463
 Traceback (most recent call last):
+464
   File "manage.py", line 14, in <module>
+465
     execute_from_command_line(sys.argv)
+466
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 453, in execute_from_command_line
+467
     utility.execute()
+468
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 392, in execute
+469
     self.fetch_command(subcommand).run_from_argv(self.argv)
+470
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 272, in fetch_command
+471
     klass = load_command_class(app_name, subcommand)
+472
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 77, in load_command_class
+473
     module = import_module('%s.management.commands.%s' % (app_name, name))
+474
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+475
     __import__(name)
+476
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/commands/loaddata.py", line 11, in <module>
+477
     from django.core import serializers
+478
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/serializers/__init__.py", line 22, in <module>
+479
     from django.core.serializers.base import SerializerDoesNotExist
+480
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/serializers/base.py", line 5, in <module>
+481
     from django.db import models
+482
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 40, in <module>
+483
     backend = load_backend(connection.settings_dict['ENGINE'])
+484
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 34, in __getattr__
+485
     return getattr(connections[DEFAULT_DB_ALIAS], item)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 93, in __getitem__
-    backend = load_backend(db['ENGINE'])
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 27, in load_backend
-    return import_module('.base', backend_name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
-    __import__(name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 5, in <module>
-    from django.contrib.gis.db.backends.postgis.operations import PostGISOperations
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 8, in <module>
-    from django.contrib.gis.geometry.backend import Geometry
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/geometry/backend/__init__.py", line 14, in <module>
-    '"%s".' % geom_backend)
-django.core.exceptions.ImproperlyConfigured: Could not import user-defined GEOMETRY_BACKEND "geos".
+486
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __getitem__
+487
+    conn = backend.DatabaseWrapper(db, alias)
+488
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 11, in __init__
+489
+    self.ops = PostGISOperations(self)
+490
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 92, in __init__
+491
+    vtup = self.postgis_version_tuple()
+492
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 444, in postgis_version_tuple
+493
+    version = self.postgis_lib_version()
+494
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 424, in postgis_lib_version
+495
+    return self._get_postgis_func('postgis_lib_version')
+496
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 405, in _get_postgis_func
+497
+    cursor = self.connection._cursor()
+498
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 182, in _cursor
+499
+    self.connection = Database.connect(**conn_params)
+500
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+501
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+502
+psycopg2.OperationalError: FATAL:  password authentication failed for user "geoq"
+503
+
+504
+
+505
+
+506
 Captured Task Output:
+507
 ---------------------
+508
+
+509
 ---> pavement.install_dev_fixtures
+510
 python manage.py loaddata geoq/fixtures/initial_data.json
+511
+
+512
 Build failed running pavement.install_dev_fixtures: Subprocess return code: 1
-ImproperlyConfigured: Could not import user-defined GEOMETRY_BACKEND "geos".
+513
+OperationalError: FATAL:  password authentication failed for user "geoq"
+514
 Traceback (most recent call last):
+515
   File "./manage.py", line 14, in <module>
+516
     execute_from_command_line(sys.argv)
+517
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 453, in execute_from_command_line
+518
     utility.execute()
+519
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 392, in execute
+520
     self.fetch_command(subcommand).run_from_argv(self.argv)
+521
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 272, in fetch_command
+522
     klass = load_command_class(app_name, subcommand)
+523
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/core/management/__init__.py", line 77, in load_command_class
+524
     module = import_module('%s.management.commands.%s' % (app_name, name))
+525
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+526
     __import__(name)
+527
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/auth/management/__init__.py", line 10, in <module>
+528
     from django.contrib.auth import models as auth_app, get_user_model
+529
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/auth/models.py", line 8, in <module>
+530
     from django.db import models
+531
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 40, in <module>
+532
     backend = load_backend(connection.settings_dict['ENGINE'])
+533
   File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/__init__.py", line 34, in __getattr__
+534
     return getattr(connections[DEFAULT_DB_ALIAS], item)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 93, in __getitem__
-    backend = load_backend(db['ENGINE'])
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 27, in load_backend
-    return import_module('.base', backend_name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
-    __import__(name)
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 5, in <module>
-    from django.contrib.gis.db.backends.postgis.operations import PostGISOperations
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 8, in <module>
-    from django.contrib.gis.geometry.backend import Geometry
-  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/geometry/backend/__init__.py", line 14, in <module>
-    '"%s".' % geom_backend)
-django.core.exceptions.ImproperlyConfigured: Could not import user-defined GEOMETRY_BACKEND "geos".
+535
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __getitem__
+536
+    conn = backend.DatabaseWrapper(db, alias)
+537
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/base.py", line 11, in __init__
+538
+    self.ops = PostGISOperations(self)
+539
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 92, in __init__
+540
+    vtup = self.postgis_version_tuple()
+541
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 444, in postgis_version_tuple
+542
+    version = self.postgis_lib_version()
+543
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 424, in postgis_lib_version
+544
+    return self._get_postgis_func('postgis_lib_version')
+545
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/contrib/gis/db/backends/postgis/operations.py", line 405, in _get_postgis_func
+546
+    cursor = self.connection._cursor()
+547
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 182, in _cursor
+548
+    self.connection = Database.connect(**conn_params)
+549
+  File "/opt/app-root/src/geoq_virtualenv/lib/python2.7/site-packages/psycopg2/__init__.py", line 164, in connect
+550
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+551
+psycopg2.OperationalError: FATAL:  password authentication failed for user "geoq"
+552
+
+553
 ---> pavement.start_django
+554
 python manage.py runserver  &
 Go to top
 End of log
