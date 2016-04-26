@@ -28,4 +28,4 @@ EOF
 
 ./manage.py collectstatic
 #./manage.py createsuperuser
-echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@example.com', '${DATABASE_PASSWORD}')" | ./manage.py shell
+echo "from django.contrib.auth.models import User; User.objects.create_superuser('geoqadmin', 'geoqadmin@example.com', '${DATABASE_PASSWORD}')" | ./manage.py shell
