@@ -116,7 +116,7 @@ objects:
           image: geoq
           livenessProbe:
             httpGet:
-              path: /geoq
+              path: /static
               port: 8080
             initialDelaySeconds: 600
             timeoutSeconds: 5
@@ -125,7 +125,7 @@ objects:
           - containerPort: 8080
           readinessProbe:
             httpGet:
-              path: /geoq
+              path: /static
               port: 8080
             initialDelaySeconds: 600
             timeoutSeconds: 5
