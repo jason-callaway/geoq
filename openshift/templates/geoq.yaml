@@ -115,20 +115,15 @@ objects:
             value: ${DJANGO_SECRET_KEY}
           image: geoq
           livenessProbe:
-            httpGet:
-              path: /static
-              port: 8080
-            initialDelaySeconds: 600
-            timeoutSeconds: 5
+            exec:
+              command:
+                - ls
+                - /opt/app-root/src
+            initialDelaySeconds: 15
+            timeoutSeconds: 1
           name: geoq
           ports:
           - containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: /static
-              port: 8080
-            initialDelaySeconds: 600
-            timeoutSeconds: 5
           resources:
             limits:
               memory: ${MEMORY_LIMIT}

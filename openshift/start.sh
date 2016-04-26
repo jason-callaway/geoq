@@ -3,4 +3,5 @@
 pushd /opt/app-root/src
 ./openshift/setup.sh
 source ./geoq_virtualenv/bin/activate
-paver start_django
+#paver start_django
+python manage.py startapp geoq
