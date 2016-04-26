@@ -3,5 +3,7 @@
 pushd /opt/app-root/src
 ./openshift/setup.sh
 source ./geoq_virtualenv/bin/activate
-#paver start_django
-python manage.py startapp geoq
+paver start_django
+while true; do
+    sleep 60
+done
