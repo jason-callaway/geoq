@@ -24,7 +24,8 @@ setup(
 @task
 def install_dependencies():
     """ Installs dependencies."""
-    sh('pip install --upgrade -r geoq/requirements.txt')
+    #sh('pip install --upgrade -r geoq/requirements.txt')
+    sh('pip install -r geoq/requirements.txt')
 
 
 @cmdopts([
